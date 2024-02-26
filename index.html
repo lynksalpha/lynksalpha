@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>InfoPanel</title>
+  <meta http-equiv="refresh" content="7200">
+  <script>
+    function digitalClock() {
+      var date = new Date();
+      var hours = date.getHours();
+      var minutes = date.getMinutes();
+      var seconds = date.getSeconds();
+      //* добавление ведущих нулей */
+      if (hours < 10) hours = "0" + hours;
+      if (minutes < 10) minutes = "0" + minutes;
+      if (seconds < 10) seconds = "0" + seconds;
+      document.getElementById("id_clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+      setTimeout("digitalClock()", 1000);
+    }
+  </script>
+  <script>
+    ! function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://weatherwidget.io/js/widget.min.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    }(document, 'script', 'weatherwidget-io-js');
+  </script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="wrap">
+
+      <div class="currency">
+        <div id="kyrs"></div>
+      </div>
+
+      <h1 class="header_title">SAT<span>&#x2022;</span>TOWER</h1>
+      <div id="id_clock"></div>
+
+    </div>
+  </div>
+
+  <div class="container1">
+  <div class="tenants">
+    <div class="tenant">
+      <table class="list">
+        <tbody>
+          <tr class="f_child">
+            <td class="f_child">SAT-NS</td>
+            <td class="s_child">18 этаж</td>
+          </tr>
+          <tr class="f_child">
+            <td class="f_child">SAT-NS</td>
+            <td class="s_child">17 этаж</td>
+          </tr>
+          <tr class="f_child">
+            <td class="f_child">Щелково Агрохим - KZ</td>
+            <td class="s_child">16 этаж</td>
+          </tr>
+          <tr class="f_child">
+            <td class="f_child">Транко</td>
+            <td class="s_child">13 этаж</td>
+          </tr>
+          <tr class="f_child">
+            <td class="f_child">Система Лаурус</td>
+            <td class="s_child">12 этаж</td>
+          </tr>
+          <tr class="f_child">
+            <td class="f_child">Air Astana JSC</td>
+            <td class="s_child">9 этаж</td>
+          </tr>
+          <tr class="f_child">
+            <td class="f_child">Форпост – Инвестиции и развитие</td>
+            <td class="s_child">8 этаж</td>
+          </tr>
+          <tr class="f_child">
+            <td class="f_child">Ассталь-КЗ</td>
+            <td class="s_child">8 этаж</td>
+          </tr>
+          <tr class="f_child">
+            <td class="f_child">Сервисные офисы</td>
+            <td class="s_child">6 этаж</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tenant">
+      <table class="list">
+        <tbody>
+          <tr class="f_child">
+            <td class="f_child" style="font-size: 45px;">Управляющая компания Lynks Property Management</td>
+            <td class="s_child">5 этаж</td>
+          </tr>
+          <tr class="f_child">
+            <td class="f_child">Сервисные офисы</td>
+            <td class="s_child">5 этаж</td>
+          </tr>
+          <tr class="f_child">
+            <td class="f_child">TSSP</td>
+            <td class="s_child">4 этаж</td>
+          </tr>
+          <tr class="f_child">
+            <td class="f_child">Феррум Логистикс</td>
+            <td class="s_child">4 этаж</td>
+          </tr>
+          <tr class="f_child">
+            <td class="f_child">TOO KazGer</td>
+            <td class="s_child">3 этаж</td>
+          </tr>
+          <tr class="f_child">
+            <td class="f_child">KAZMEDEQ.KZ</td>
+            <td class="s_child">3 этаж</td>
+          </tr>
+          <tr class="f_child">
+            <td class="f_child">GQ-Group Invest</td>
+            <td class="s_child">2 этаж</td>
+          </tr>
+          <tr class="f_child">
+            <td class="f_child">INVESTAR NS</td>
+            <td class="s_child">2 этаж</td>
+          </tr>
+          <tr class="f_child">
+            <td class="f_child">Ассталь-КЗ</td>
+            <td class="s_child">2 этаж</td>
+          </tr>
+          <tr class="f_child">
+            <td class="f_child">ANGA CONSTRUCTION</td>
+            <td class="s_child">2 этаж</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+  </div>
+
+  <div class="weather">
+    <a class="weatherwidget-io" href="https://forecast7.com/ru/51d1671d47/astana/" data-label_1="ASTANA"
+      data-label_2="WEATHER" data-days="5" data-theme="original">ASTANA WEATHER</a>
+  </div>
+
+  <script>
+    digitalClock();
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    ;
+    (function ($) {
+      $("#kyrs").load("https://kurs-tenge.kz/informers/kursinfo.php?kursinfo=3");
+    })(jQuery);
+  </script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
