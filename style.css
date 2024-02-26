@@ -124,7 +124,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'digitalcyrillic1', sans-serif;}
 
 .currency {
-  position: absolute;}
+  position: absolute;
+  top: 50%;
+  transform: translateY(-85px);}
 
 table tbody tr td a b {
   font-size: 0px !important;}
