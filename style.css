@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .list {
   font-family: 'Rubik', sans-serif;
-  font-size: 37px;
+  font-size: 28px;
   width: 100%;
   padding-left: 25px;
   padding-right: 25px;
@@ -191,4 +191,5 @@ table tbody tr:nth-child(4) {
 
 #kursinfo3 .kyrsvalyt td.level-up, #kursinfo3 .kyrsvalyt td.level-down {
 	display: none !important;}
+
 
