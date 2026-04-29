@@ -1,1 +1,1 @@
-# SatInfo
+# InfoPanel
